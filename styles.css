@@ -1,0 +1,175 @@
+/* Общие стили */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Фоновое видео */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: brightness(0.5);
+}
+
+/* Липкое меню */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 105, 180, 0.9);
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Главное приветствие */
+.hero {
+    text-align: center;
+    color: #fff;
+    padding: 200px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.main-btn {
+    background-color: #ff005b;
+    color: #fff;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px rgba(255, 0, 91, 0.4);
+    transition: all 0.3s ease;
+}
+
+.main-btn:hover {
+    background-color: #e5004f;
+    transform: scale(1.05);
+}
+
+/* Секции */
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #ff1493;
+    margin-bottom: 1em;
+}
+
+/* Сетка для услуг и преимуществ */
+.service-grid, .advantage-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-item, .advantage-item {
+    background: #fff;
+    padding: 30px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-item:hover, .advantage-item:hover {
+    transform: scale(1.05);
+}
+
+/* Форма обратной связи */
+.contact-form {
+    background: linear-gradient(135deg, #ffacd1, #ff5b79);
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form form {
+    display: grid;
+    gap: 20px;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-form button {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #ff3385;
+}
+
+/* Футер */
+footer {
+    background: #ff9eb3;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
